@@ -1,0 +1,190 @@
+// .technologies {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center; /* Center the icons horizontally */
+//     align-items: center;
+//     gap: 10px;
+//     height: auto; /* Adjust based on your layout */
+//     padding: 20px;
+// }
+// .technologies {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* Adjust minmax value to fit your icons */
+//     gap: 1px; /* Space between icons */
+//     height: auto; /* Adjust based on your layout */
+//     padding: 10px;
+//     justify-items: center; /* Center icons within grid cells */
+//     align-items: center;
+// }
+// .tech-icon {
+//     font-size: 2rem; /* Adjust size as needed */
+//     margin: 5px;
+//     position: relative;
+//     animation: randomBounce 5s infinite;
+//     color: #ffffff; /* Set default color or specific color */
+//     display: inline-flex;
+//     transition: transform 0.3s; /* Smooth transformation on hover */
+    
+// }
+@import "../../app.scss";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: fit-content; /* Ensures the grid's width adjusts to the content */
+    margin: 0 auto; /* Center the grid within the container */
+}
+
+.tech-icon {
+    font-size: 2rem;
+    margin: 5px;
+    animation: randomBounce 5s infinite;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+
+    @include mobile {
+        font-size: 1.5rem;
+    }
+
+}
+
+.tech-icon:hover {
+    transform: scale(1.9); /* Slightly increase the size on hover */
+}
+
+
+
+
+/* Example of setting individual icon colors */
+.fa-python {
+    color: #306998; /* Python color */
+}
+
+.fa-js-square {
+    color: #f7df1e; /* JavaScript color */
+}
+
+.fa-react {
+    color: #61dafb; /* React color */
+}
+
+.fa-angular {
+    color: #dd0031; /* Angular color */
+}
+
+.fa-nodejs {
+    color: #8cc84b; /* Node.js color */
+}
+
+.di-django {
+    color: #104732; /* Django color */
+}
+
+.fa-aws {
+    color: rgb(211, 102, 29); /* AWS color */
+}
+
+.si-csharp {
+    color: #178600; /* C# color */
+}
+
+.si-dotnet {
+    color: #512bd4; /* .NET color */
+}
+
+.fa-java {
+    color: #007396; /* Java color */
+}
+
+.fa-github {
+    color: #333; /* GitHub color */
+}
+
+.fa-git{
+    color: #f34f29;
+}
+
+.fa-html {
+    color: #e34f26; /* HTML color */
+}
+
+.fa-css {
+    color: #1572b6; /* CSS color */
+}
+
+.fa-bootstrap {
+    color: #563d7c; /* Bootstrap color */
+}
+
+.fa-docker {
+    color: #2496ed; /* Docker color */
+}
+
+.fc-linux{
+    color: yellow;
+}
+
+.bi-logogolang {
+    color: #00add8; /* Golang color */
+}
+
+.si-mysql {
+    color: #1b6d92; /* MySQL color */
+}
+
+.si-mongodb {
+    color: #47a248; /* MongoDB color */
+}
+
+.si-postman {
+    color: #ff6c37; /* Postman color */
+}
+
+.si-typescript {
+    color: #007acc; /* TypeScript color */
+}
+
+.di-postgresql {
+    color: #336791; /* PostgreSQL color */
+}
+
+.tb-brandcpp {
+    color: #00599c; /* C++ color */
+}
+
+.vsc-vscode {
+    color: #007acc; /* VSCode color */
+}
+
+@keyframes randomBounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
